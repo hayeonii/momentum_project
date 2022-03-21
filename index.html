@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>momentum project.</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top_bar">
+            <div class="weather">
+                <span id="temp"></span>
+                <span id="city"></span>
+            </div>
+            <div class="log-in">
+                <form class="hidden" id="login-form">
+                    <span>이름을 입력하세요 ▶︎ </span>
+                    <input required type="text" id="name_input">
+                    <input type="submit" value="Log-In" id="name_button">
+                </form>
+                <p class="hidden" id="greeting"></p>
+            </div>
+        </div>
+        <div class="wrapper_bottom">
+            <div class="wrapper_left">
+                <div class="todo">
+                    <form id="todo-form">
+                        <p id="todo-title">What are your plans for today?</p>
+                        <br>
+                        <input id="todo-input" type="text" placeholder="당신이 오늘 할 일을 적어보세요!" required>
+                    </form>
+                    <br>
+                    <ul id="todo-list"></ul>
+                </div>
+            </div>
+            <div class="wrapper_center">
+                <div class="clock">
+                    <span id="clock1">00:00</span>
+                    <span id="clock2">:00</span>
+                </div>
+                <div class="link"></div>
+            </div>
+            <div class="wrapper_right">
+                <div class="book">
+                    <p id="todo-title">Best Seller</p>
+                   <br>
+                    <div class="best-seller"></div>
+                </div>
+                    <div class="link">
+                        <p id="todo-title">link</p>
+                        <br>
+                        <div class="link-img">
+                            <a href="https://www.google.com/">
+                                <img src="./img/book/google.png" width="70px" height="70px">
+                            </a>
+                            <a href="https://www.naver.com/">
+                                <img src="./img/book/naver.png" width="70px" height="70px">
+                            </a>
+                            <a href="https://www.youtube.com/">
+                                <img src="./img/book/youtube.png"  width="70px" height="70px">
+                            </a>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+        
+    </div>
+
+    <script defer src="./js/login.js"></script>
+    <script defer src="./js/clock.js"></script>
+    <script defer src="./js/todo.js"></script>
+    <script defer src="./js/weather.js"></script>
+    <script defer src="./js/bg.js"></script>
+    <script defer src="./js/book.js"></script>
+</body>
+</html>
